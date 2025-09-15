@@ -76,28 +76,40 @@ Questo consente la massima compatibilità per Android e iOS, oltre a una facile 
 
 All’interno di questo repository trovi anche:
 
-### 1. **Progetto Flutter**
-Cartella `/flutter_app/`:  
-Contiene il codice sorgente dell'app Flutter per la gestione e il monitoraggio del sistema Allarme GasBT.  
-L’app consente di:
-- Ricevere dati dai sensori via Bluetooth
-- Visualizzare lo stato dei sensori e dispositivi
-- Gestire le notifiche di allarme
-- Attivare/disattivare le funzioni di sicurezza
+### 1. **Esempi di progetto**
 
-### 2. **Progetto INO esempio: Allarme Camper Antintrusione**
-Cartella `/allarme-camper-antintrusione/`:  
-Contiene uno sketch di esempio per ESP32/Arduino, dedicato all’antintrusione per camper.  
-Questo progetto dimostra come collegare sensori di movimento, attivare relay e inviare notifiche di allarme tramite Bluetooth.  
-Può essere usato come base per personalizzazioni e integrazioni con il sistema gas.
+- **Cartella `/allarme_camper/`**  
+  Contiene un esempio di progetto Flutter per la realizzazione dell’app di controllo e monitoraggio Allarme Camper.  
+  All’interno trovi i file sorgente, la struttura base di una app Flutter e istruzioni per partire velocemente con lo sviluppo.
 
-### 3. **Progetto principale Gas**
-Cartella `/allarme_gasbt/`:  
-Contiene il codice sorgente per il monitoraggio gas (ESP32), con gestione sensori MQ-2/MQ-135, relay e LED RGB.
+- **File `allarme_camperv1.ino`**  
+  Esempio di sketch per ESP32/Arduino dedicato alla gestione dell’allarme camper.  
+  Puoi usarlo come modello per integrare sensori, relay e comunicazione Bluetooth.
+
+### 2. **Progetto principale Gas**
+
+- **Cartella `/allarme_gasbt/`**  
+  Codice sorgente per il monitoraggio gas (ESP32), con gestione sensori MQ-2/MQ-135, relay e LED RGB.
+
+### 3. **Progetto antintrusione (legacy)**
+
+- **Cartella `/allarme-camper-antintrusione/`**  
+  Sketch di esempio per ESP32/Arduino, dedicato all’antintrusione per camper.  
+  Mostra come collegare sensori di movimento, attivare relay e inviare notifiche di allarme tramite Bluetooth.
 
 ### 4. **Documentazione**
-Cartella `/docs/`:  
-Guide, tutorial, schemi di collegamento, informazioni tecniche su hardware e software.
+
+- **Cartella `/docs/`**  
+  Guide, tutorial, schemi di collegamento, informazioni tecniche su hardware e software.
+
+---
+
+## Come usare gli esempi
+
+- Entra nella cartella `/allarme_camper/` ed esplora i file Flutter.  
+  Puoi importare la cartella in Visual Studio Code e avviare l’emulatore per testare l’app di esempio.
+- Carica il file `allarme_camperv1.ino` su una board ESP32 o Arduino per testare il funzionamento base dell’allarme camper.
+- Per il progetto gas, usa la cartella `/allarme_gasbt/`.
 
 ---
 
